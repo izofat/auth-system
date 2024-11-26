@@ -16,6 +16,7 @@ black = "^24.10.0"
 bandit = "^1.7.10"
 pyjwt = "^2.10.0"
 mysql-connector-python = "^9.1.0"
+pydash = "^8.0.4"
 
 
 [build-system]
