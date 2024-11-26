@@ -1,0 +1,8 @@
+# hidden files
+.idea/
+.secret/
+*__pycache__/
+*.mypy_cache/
+config.toml
+*.vscode/
+.DS_Store
