@@ -27,6 +27,7 @@ JWT_SECRET = pydash.get(config, "jwt_secret")
 
 assert JWT_SECRET, "JWT secret not found in config.toml"
 
+
 class MySqlConfig:
     HOST = pydash.get(config, f"db.{ENV}.host")
     PORT = pydash.get(config, f"db.{ENV}.port")
