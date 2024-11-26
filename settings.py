@@ -15,7 +15,9 @@ config = toml.load(config_path)
 
 assert config, "config.toml is empty, please fill it with the necessary data"
 
-ENV = "dev" if pydash.get(config, "debug", True) else "prod"
+DEBUG = pydash.get(config, "debug", True)
+
+ENV = "dev" if DEBUG else "prod"
 
 API_PORT = pydash.get(config, f"api.{ENV}.port")
 
