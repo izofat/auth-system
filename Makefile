@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-PROJECT_NAME := LX-Scanner-Backend
+PROJECT_NAME := auth-system
 
 POETRY := ~/.local/bin/poetry
 
@@ -17,13 +17,13 @@ format:
 	@poetry run black .
 
 type-check:
-	@poetry run mypy lx_scanner_backend
+	@poetry run mypy auth_system
 	@poetry run mypy tests
 
 lint:
-	@poetry run pylint lx_scanner_backend
+	@poetry run pylint auth_system
 	@poetry run pylint tests
-	@poetry run bandit -r lx_scanner_backend
+	@poetry run bandit -r auth_system
 
 test-db:
 	@poetry run pytest tests/db
